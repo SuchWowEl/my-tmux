@@ -46,6 +46,9 @@ main() {
   pink='#d27e99'         # sakura pink
   yellow='#ff9e3b'       # roninYellow
 
+  dark_flag='#b28956'
+  light_flag='#a7a38f'
+
   # Handle left icon configuration
   case $show_left_icon in
   smiley)
@@ -99,8 +102,8 @@ main() {
     current_flags=""
     ;;
   true)
-    flags="#{?window_flags,#[fg=${dark_purple}]#{window_flags},}"
-    current_flags="#{?window_flags,#[fg=${light_purple}]#{window_flags},}"
+    flags="#{?window_flags,#[fg=${dark_flag}]#{window_flags},}"
+    current_flags="#{?window_flags,#[fg=${light_flag}]#{window_flags},}"
     ;;
   esac
 
