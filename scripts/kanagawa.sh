@@ -63,6 +63,9 @@ main() {
   hostname)
     left_icon="#H"
     ;;
+  username)
+    left_icon=$(whoami)
+    ;;
   shortname)
     left_icon="#h"
     ;;
