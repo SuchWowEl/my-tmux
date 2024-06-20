@@ -26,6 +26,19 @@ set_theme() {
       pink=$lotus_pink
       yellow=$lotus_teal_3
       ;;
+    eldritch)
+      white='#ebfafa'
+      gray='#2a2a37'
+      dark_gray='#1a1a22'
+      light_purple='#a48cf2'
+      dark_purple='#bf4f8e'
+      cyan='#04d1f9'
+      green='#37f499'
+      orange='#f7c67f'
+      red='#f16c75'
+      pink='#f265b5'
+      yellow='#f1fc79'
+      ;;
     *)
       white=$fuji_white
       gray=$sumi_ink_4

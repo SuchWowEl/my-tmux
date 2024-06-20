@@ -11,6 +11,7 @@ render() {
   local wave_title="Wave"
   local dragon_title="Dragon"
   local lotus_title="Lotus"
+  local eldritch_title="Eldritch"
 
   case $theme in
   wave)
@@ -22,6 +23,9 @@ render() {
   lotus)
     lotus_title="Lotus*"
     ;;
+  eldritch)
+    eldritch_title="Eldritch*"
+    ;;
   esac
 
   tmux display-menu -T "#[align=centre fg=green]Colors" -x R -y P \
@@ -30,6 +34,7 @@ render() {
     "$wave_title" 1 "run -b '#{@kanagawa-root}/scripts/actions.sh set_state_and_tmux_option theme wave" \
     "$dragon_title" 2 "run -b '#{@kanagawa-root}/scripts/actions.sh set_state_and_tmux_option theme dragon" \
     "$lotus_title" 3 "run -b '#{@kanagawa-root}/scripts/actions.sh set_state_and_tmux_option theme lotus" \
+    "$eldritch_title" 4 "run -b '#{@kanagawa-root}/scripts/actions.sh set_state_and_tmux_option theme eldritch" \
     "" \
     "<-- Back" b "run -b 'source #{@kanagawa-root}/menu_items/main.sh" \
     "Close menu" q ""

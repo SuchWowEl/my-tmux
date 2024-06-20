@@ -68,10 +68,7 @@ main() {
     left_icon_content="#H"
     ;;
   username)
-    left_icon=$(whoami)
-    ;;
-  username)
-    left_icon=$(whoami)
+    left_icon_content=$(whoami)
     ;;
   shortname)
     left_icon_content="#h"
