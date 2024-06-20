@@ -34,20 +34,20 @@ main() {
   show_empty_plugins=$(get_tmux_option "@kanagawa-show-empty-plugins" true)
 
   # Kanagawa Color Pallette
-  white='#dcd7ba'        # fujiWhite
+  white='#ebfafa'        # fujiWhite
   gray='#2a2a37'         # sumiInk4
   dark_gray='#1a1a22'    # sumiInk2
-  light_purple='#363646' # sumiInk5
-  dark_purple='#54546D'  # sumiInk6
-  cyan='#6a9589'         # wave aqua
-  green='#938aa9'        # springViolet1
-  orange='#dca561'       # autumn orange
-  red='#e46876'          # wave red
-  pink='#d27e99'         # sakura pink
-  yellow='#ff9e3b'       # roninYellow
+  light_purple='#a48cf2' # sumiInk5
+  dark_purple='#bf4f8e'  # sumiInk6
+  cyan='#04d1f9'         # wave aqua
+  green='#37f499'        # springViolet1
+  orange='#f7c67f'       # autumn orange
+  red='#f16c75'          # wave red
+  pink='#f265b5'         # sakura pink
+  yellow='#f1fc79'       # roninYellow
 
-  dark_flag='#b28956'
-  light_flag='#a7a38f'
+  dark_flag='#00FA82'
+  light_flag='#33C57F'
 
   # Handle left icon configuration
   case $show_left_icon in
