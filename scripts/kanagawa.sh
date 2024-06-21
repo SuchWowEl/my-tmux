@@ -140,7 +140,9 @@ main() {
   tmux set-option -g status-right-length 100
 
   # pane border styling
-  if $show_border_contrast; then
+  if [[ $theme == "eldritch" ]]; then
+    tmux set-option -g pane-active-border-style "fg=${dark_cyan}"
+  elif $show_border_contrast; then
     tmux set-option -g pane-active-border-style "fg=${light_purple}"
   else
     tmux set-option -g pane-active-border-style "fg=${dark_purple}"
@@ -316,7 +318,13 @@ main() {
   done
 
   # Window option
-  if $show_powerline; then
+  if [[ $theme == "eldritch" ]]; then
+    if $show_powerline; then
+      tmux set-window-option -g window-status-current-format "#[fg=${gray},bg=${dark_cyan}]${left_sep}#[fg=${line_gray},bg=${dark_cyan}] #I #W${current_flags} #[fg=${dark_cyan},bg=${gray}]${left_sep}"
+    else
+      tmux set-window-option -g window-status-current-format "#[fg=${gray},bg=${cyan}] #I #W${current_flags} "
+    fi
+  elif $show_powerline; then
     tmux set-window-option -g window-status-current-format "#[fg=${gray},bg=${dark_purple}]${left_sep}#[fg=${white},bg=${dark_purple}] #I #W${current_flags} #[fg=${dark_purple},bg=${gray}]${left_sep}"
   else
     tmux set-window-option -g window-status-current-format "#[fg=${white},bg=${dark_purple}] #I #W${current_flags} "
