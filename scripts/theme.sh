@@ -37,9 +37,14 @@ set_theme() {
       dark_cyan='#10A1BD'
       green='#33C57F'
       orange='#f7c67f'
-      red='#f16c75'
-      pink='#f265b5'
-      yellow='#f1fc79'
+      # NOTE: for eldritch
+      # red='#f16c75'
+      # pink='#f265b5'
+      # yellow='#f1fc79'
+      # NOTE: for fluoromachine
+      red='#FE4450'
+      pink='#FF7EDB'
+      yellow='#FFCC00'
       ;;
     *)
       white=$fuji_white
